@@ -2,21 +2,18 @@
 name = "google-ajax-bin"
 version = "0.1.0"
 edition = "2021"
+license.workspace = true
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-anyhow = "1.0.82"
-clap = { version = "4.4.0", features = ["derive"] }
-reqwest = { version = "0.12.4", default-features = false, features = [
-  "http2",
-  "rustls-tls",
-  "gzip",
-] }
-tokio = { version = "1.37.0", features = ["rt", "rt-multi-thread", "time"] }
-tracing = "0.1.40"
-log-utils = { path = "../../../utils/rs/log-utils" }
-npm-registry = { path = "../../../source/npm/registry" }
+anyhow.workspace = true
+clap.workspace = true
+reqwest = { workspace = true, features = ["gzip"] }
+tokio = { workspace = true, features = ["rt-multi-thread", "time"] }
+tracing.workspace = true
+log-utils = { workspace = true, features = ["progress"] }
+npm-registry.workspace = true
 # jquery-fetcher = { path = "../../../library/jquery/fetcher" }
 three-js = { path = "../../../library/three.js/fetcher" }
 dojo-fetcher = { path = "../../../library/dojo/fetcher" }

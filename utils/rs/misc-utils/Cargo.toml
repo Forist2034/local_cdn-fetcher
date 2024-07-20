@@ -2,10 +2,11 @@
 name = "misc-utils"
 version = "0.1.0"
 edition = "2021"
+license.workspace = true
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-thiserror = "1.0.58"
-serde = "1.0.198"
-serde_json = "1.0.116"
+thiserror.workspace = true
+serde.workspace = true
+serde_json.workspace = true

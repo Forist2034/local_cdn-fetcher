@@ -18,3 +18,26 @@ members = [
   "./website/ajax.googleapis.com/update-rs",
   "./website/ajax.googleapis.com/update-rs-bin",
 ]
+
+[workspace.package]
+license = "MIT"
+
+[workspace.dependencies]
+serde = { version = "1.0.198", features = ["derive"] }
+serde_json = "1.0.116"
+reqwest = { version = "0.12.4", default-features = false, features = [
+  "http2",
+  "rustls-tls",
+] }
+tokio = { version = "1.37.0", features = ["rt"] }
+thiserror = "1.0.58"
+anyhow = "1.0.82"
+tracing = "0.1.40"
+indicatif = "0.17.8"
+tracing-indicatif = "0.3.6"
+clap = { version = "4.4.0", features = ["derive"] }
+
+log-utils = { path = "utils/rs/log-utils", default-features = false }
+misc-utils = { path = "utils/rs/misc-utils" }
+
+npm-registry = { path = "source/npm/registry" }

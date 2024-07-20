@@ -2,12 +2,13 @@
 name = "three-js"
 version = "0.1.0"
 edition = "2021"
+license.workspace = true
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-serde = { version = "1.0.198", features = ["derive"] }
-tracing = "0.1.40"
-thiserror = "1.0.58"
-npm-registry = { path = "../../../source/npm/registry" }
-misc-utils = { path = "../../../utils/rs/misc-utils" }
+serde.workspace = true
+tracing.workspace = true
+thiserror.workspace = true
+npm-registry.workspace = true
+misc-utils.workspace = true
